@@ -1,4 +1,4 @@
-# SAMPPI
+# SAMAffinity
 ## Install
 ### Create a Conda Environment
 ```
