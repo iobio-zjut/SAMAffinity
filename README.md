@@ -10,7 +10,7 @@ Zhejiang University of Technology, Hangzhou 310023, China
 ## 🌟**Overall workflow for the SAMAffinity**⭐
 ![SAMAffinity pipeline](pipeline.png)
 
-## 1.🛠**Download SAMAffinity package**
+## **1.🛠Download SAMAffinity package**
 
 ```
 git clone --recursive https://github.com/iobio-zjut/SAMAffinity 
@@ -19,7 +19,7 @@ git clone --recursive https://github.com/iobio-zjut/SAMAffinity
 
 - **Add the download file** to `/SAMAffinity/save_models`.
 
-## 2.🔥**Installation**
+## **2.🔥Installation**
 
 ### **Third-Party Software Used**
 - **AntiBERTy** | ([GitHub](https://github.com/jeffreyruffolo/AntiBERTy)) | [MIT](https://opensource.org/license/mit)
@@ -47,7 +47,7 @@ scikit-learn==1.0.2
 scipy==1.7.3
 ```
 
-## 3.📦**Feature Generation**
+## **3.📦Feature Generation**
 
 - First, run the following script to convert '.csv' to '.fasta' file.
 ```
@@ -66,15 +66,16 @@ python ./data/utils/PSSM_generate.py
 - Please visit [NetSurfP-3.0 online server](https://services.healthtech.dtu.dk/services/NetSurfP-3.0/) for RASA generation.
 
 
-## 4.🚀**Training**
+## **4.🚀Training**
 
 - Run the following script to train the **S1131** model, the same applies to other datasets.
 ```
 python ./main/S1131/train/train_S1131.py
 ```
 
-## 5.🎯**Predict**
+## **5.🎯Predict**
 - Run the following script to predict the **S1131** model, the same applies to other datasets
 ```
 python ./main/S1131/predict/predict_S1131.py
 ```
+- [The pretrained model is provided.](https://github.com/iobio-zjut/SAMAffinity/releases/tag/v1.0)
