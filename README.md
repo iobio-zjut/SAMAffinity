@@ -25,7 +25,7 @@ git clone --recursive https://github.com/iobio-zjut/SAMAffinity
 - **AntiBERTy** | ([GitHub](https://github.com/jeffreyruffolo/AntiBERTy)) | [MIT](https://opensource.org/license/mit)
 - **ESM-2** | ([GitHub](https://github.com/facebookresearch/esm)) | ([version](https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt)) | [MIT](https://opensource.org/license/mit)
 - **ProtTrans** | ([GitHub](https://github.com/agemagician/ProtTrans)) | ([version](https://zenodo.org/record/4644188)) | [MIT](https://opensource.org/license/mit)
-
+- **ProtTrans** | ([GitHub](https://github.com/agemagician/ProtTrans)) | ([version](https://zenodo.org/record/4644188)) | [MIT](https://opensource.org/license/mit)
 
 ### **Create a new conda environment and update**
 
