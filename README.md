@@ -73,7 +73,7 @@ python ./main/S1131/train/train_S1131.py
 ```
 
 ## **5.🎯Predict**
-- Run the following script to predict the **S1131** model, the same applies to other datasets
+- Run the following script to predict the **S1131** model, the same applies to other datasets.
 ```
 python ./main/S1131/predict/predict_S1131.py
 ```
