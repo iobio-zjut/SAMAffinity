@@ -7,7 +7,7 @@ College of Information Engineering
 Zhejiang University of Technology, Hangzhou 310023, China  
 ✉️ Email: [zgj@zjut.edu.cn](mailto:zgj@zjut.edu.cn)
 
-## 🌟**Overall workflow for the SAMAffinity**⭐
+## 🌟**Overall workflow for the SAMAffinity**🌟
 ![SAMAffinity pipeline](pipeline.png)
 
 ## **1.🛠Download SAMAffinity package**
