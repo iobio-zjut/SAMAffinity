@@ -215,7 +215,7 @@ if __name__ == "__main__":
         device = torch.device('cpu')
         print('The code uses CPU!!!')
 
-    base_dir = './SAMPPI'
+    base_dir = './SAMAffinity'
 
     """Load preprocessed data."""
     print('Loading data...')
