@@ -62,7 +62,7 @@ Please follow the instructions in the corresponding GitHub repository to install
 - First, taking the S4169 dataset as example, open the **`./data/utils/S4169_config.json`** file and modify the corresponding **path parameters** to your own paths (the same applies to the other datasets. The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
 - Then, run the following script to extract features from `.csv` files.
 ```
-python ./data/utils/run_all_features.py --config_file S4169_config.json
+python ./data/utils/run_all_features.py --config_file /data/utils/S4169_config.json
 ```
 - **One hot**, **Physicochemical properties** and **BLOSUM62** will be automatically generated during training.
  
