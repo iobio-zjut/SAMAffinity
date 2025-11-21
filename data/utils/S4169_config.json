@@ -1,0 +1,41 @@
+{
+    "common": {
+        "csv_file": "./data/S4169.csv",
+        "fasta_dir": "./data/S4169_fasta",
+        "suffix_list": [
+            "R1", "R2", "R3", "R4", "R5", "R6",
+            "L1", "L2", "L3",
+            "Rm1", "Rm2", "Rm3", "Rm4", "Rm5", "Rm6",
+            "Lm1", "Lm2", "Lm3"
+        ]
+    },
+
+    "output_dirs": {
+        "esm2": "./data/feature/S4169_esm2",
+        "prott5": "./data/feature/S4169_prott5",
+        "pssm": "./data/feature/S4169_pssm"
+    },
+
+    "script_paths": {
+        "esm2": "./data/utils/ESM2_generate.py",
+        "prott5": "./data/utils/ProtT5_generate.py",
+        "pssm": "./data/utils/PSSM_generate.py"
+    },
+
+    "esm2_specific": {
+        "esm_model_path": "./data/esm2_t33_650M_UR50D.pt",
+        "nogpu": false
+    },
+
+    "prott5_specific": {
+        "model_path": "./data/prott5",
+        "per_protein": 0,
+        "half": 0,
+        "is_3Di": 0
+    },
+    "pssm_specific": {
+        "psiblast_path": "./data/ncbi-blast-2.12.0+/bin/psiblast",
+        "db_path": "./data/ncbi-blast-2.12.0+/bin/swissprot"
+    }
+
+}
