@@ -38,6 +38,10 @@ conda activate SAMAffinity
 ### **Install dependencies**
 
 ```
+antiberty==0.1.1
+fair-esm==2.0.0
+transformers==4.34.1
+
 torch==1.13.0
 torchaudio==0.13.0
 torchvision==0.14.0
@@ -62,13 +66,13 @@ python ./data/utils/run_all_features.py --config_file S4169_config.json
 
 ## **4.🚀Training**
 
-- Run the following script to train the **S1131** model, the same applies to other datasets.
+- Run the following script to train the **S4139** model, the same applies to other datasets.
 ```
 python ./main/S4169/train/train_S4169.py
 ```
 
 ## **5.🎯Predict**
-- Run the following script to predict the **S1131** model, the same applies to other datasets.
+- Run the following script to predict the **S4139** model, the same applies to other datasets.
 ```
 python ./main/S4169/predict/predict_S4169.py
 ```
