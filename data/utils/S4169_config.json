@@ -11,9 +11,9 @@
     },
 
     "output_dirs": {
-        "esm2": "./data/feature/S4169_esm2",
-        "prott5": "./data/feature/S4169_prott5",
-        "pssm": "./data/feature/S4169_pssm"
+        "esm2": "./data/S4169_esm2",
+        "prott5": "./data/S4169_prott5",
+        "pssm": "./data/S4169_pssm"
     },
 
     "script_paths": {
