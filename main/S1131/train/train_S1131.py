@@ -226,7 +226,7 @@ if __name__ == "__main__":
         device = torch.device('cpu')
         print('The code uses CPU!!!')
 
-    base_dir = './SAMPPI'
+    base_dir = './SAMAffinity'
 
     """Load preprocessed data."""
     csv = pd.read_csv(f'{base_dir}/data/S1131.csv',usecols=['PDB','mutation_clean','a','b','a_mut','b_mut', 'ddG'])
