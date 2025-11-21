@@ -10,17 +10,17 @@ Zhejiang University of Technology, Hangzhou 310023, China
 ## 🌟**Overall workflow for the SAMAffinity**🌟
 ![SAMAffinity pipeline](pipeline.png)
 
-## **1.🛠Download SAMAffinity package**
+
+## **1.🛠Installation**
+
+### **Download SAMAffinity package**
 
 ```
 git clone --recursive https://github.com/iobio-zjut/SAMAffinity 
 ```
-- **Download [the pretrained model weights](https://github.com/iobio-zjut/SAMAffinity/releases/tag/v1.0) used in SAMAffinity.**
+- Download **[the pretrained model weights](https://github.com/iobio-zjut/SAMAffinity/releases/tag/v1.0)** used in SAMAffinity.
 
-- **Add the download file** to `/SAMAffinity/save_models`.
-
-## **2.🔥Installation**
-
+- Add the **download file** to **`./SAMAffinity/save_models`** (You may need to create a new empty folder yourself).
 
 ### **Create a new conda environment and update**
 
@@ -57,7 +57,7 @@ transformers==4.34.1 (for ProtTrans)
 ```
 Please follow the instructions in the corresponding GitHub repository to install it into your environment, download the specified version of the weight files.
 
-## **3.📦Feature Generation**
+## **2.📦Feature Generation**
 
 - First, taking the S4169 dataset as example, open the **`./data/utils/S4169_config.json`** file and modify the corresponding **path parameters** to your own paths (the same applies to the other datasets. The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
 - Then, run the following script to extract features from `.csv` files.
@@ -69,14 +69,14 @@ python ./data/utils/run_all_features.py --config_file ./data/utils/S4169_config.
 - Please visit [NetSurfP-3.0 online server](https://services.healthtech.dtu.dk/services/NetSurfP-3.0/) for **RASA** generation.
 
 
-## **4.🚀Training**
+## **3.🔥Training**
 
 - Run the following script to train the **S4139** model, the same applies to other datasets.
 - (Note: Make sure to check any paths that may be involved in the file.)
 ```
 python ./main/S4169/train/train_S4169.py
 ```
-## **5.🎯Predict**
+## **4.🚀Predict**
 - Run the following script to predict the **S4139** model, the same applies to other datasets.
 ```
 python ./main/S4169/predict/predict_S4169.py
