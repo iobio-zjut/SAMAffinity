@@ -25,6 +25,8 @@ git clone --recursive https://github.com/iobio-zjut/SAMAffinity
 - **AntiBERTy** | ([GitHub](https://github.com/jeffreyruffolo/AntiBERTy)) | [MIT](https://opensource.org/license/mit)
 - **ESM-2** | ([GitHub](https://github.com/facebookresearch/esm)) | ([version](https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt)) | [MIT](https://opensource.org/license/mit)
 - **ProtTrans** | ([GitHub](https://github.com/agemagician/ProtTrans)) | ([version](https://zenodo.org/record/4644188)) | [MIT](https://opensource.org/license/mit)
+- **NetSurfP-3.0** | ([web-server](https://services.healthtech.dtu.dk/services/NetSurfP-3.0/))
+- **BLAST+ 2.12.0** | ([Download](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.12.0/)) | [NCBI](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
 ### **Create a new conda environment and update**
 
@@ -48,10 +50,8 @@ scipy==1.7.3
 
 ## **3.📦Feature Generation**
 
-- First, open the **`S4169_config.json`** file and modify the corresponding **path** parameters to your own paths(the same applies to the other datasets.
-- (The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
-
-- Then, run the following script to extract features from '.fasta' files.
+- First, taking the S4169 dataset as example, open the **`./data/utils/S4169_config.json`** file and modify the corresponding **path parameters** to your own paths (the same applies to the other datasets. The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
+- Then, run the following script to extract features from `.csv` files.
 ```
 python ./data/utils/run_all_features.py --config_file S4169_config.json
 ```
@@ -64,12 +64,12 @@ python ./data/utils/run_all_features.py --config_file S4169_config.json
 
 - Run the following script to train the **S1131** model, the same applies to other datasets.
 ```
-python ./main/S1131/train/train_S1131.py
+python ./main/S4169/train/train_S4169.py
 ```
 
 ## **5.🎯Predict**
 - Run the following script to predict the **S1131** model, the same applies to other datasets.
 ```
-python ./main/S1131/predict/predict_S1131.py
+python ./main/S4169/predict/predict_S4169.py
 ```
 - [The pretrained model is provided.](https://github.com/iobio-zjut/SAMAffinity/releases/tag/v1.0)
