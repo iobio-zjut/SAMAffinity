@@ -240,7 +240,7 @@ if __name__ == "__main__":
         print('The code uses CPU!!!')
 
     #input path
-    base_dir = './SAMPPI'
+    base_dir = './SAMAffinity'
 
     """Load preprocessed data."""
     csv = pd.read_csv(f'{base_dir}/data/S645.csv',usecols=['PDB','mutation_clean','antibody_light_seq','antibody_heavy_seq','antigen_a_seq','antigen_b_seq','antibody_light_seq_mut','antibody_heavy_seq_mut','antigen_a_seq_mut','antigen_b_seq_mut', 'ddG'])
