@@ -9,9 +9,9 @@
 
     "output_dirs": {
         "antiberty": "./data/M1101_antiberty",
-        "esm2": "./data/M1101_esm2",
+        "esm2": "./data/M1101_esm2_emb",
         "prott5": "./data/M1101_prott5",
-        "pssm": "./data/M1101_pssm"
+        "pssm": "./data/M1101_PSSM"
     },
 
     "script_paths": {
