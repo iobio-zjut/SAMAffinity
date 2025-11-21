@@ -49,7 +49,7 @@ scipy==1.7.3
 - **BLAST+ 2.12.0** | ([Download](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.12.0/)) | [NCBI](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 
   
-The dependency versions of the third-party software are as follows:
+The dependency **versions** of the third-party software are as follows:
 ```
 antiberty==0.1.1
 fair-esm==2.0.0
