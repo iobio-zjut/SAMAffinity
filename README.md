@@ -48,17 +48,12 @@ scipy==1.7.3
 
 ## **3.📦Feature Generation**
 
-- First, run the following script to convert '.csv' to '.fasta' file.
-```
-python ./data/utils/process_csv_to_fasta.py
-```
+- First, open the **`S4169_config.json`** file and modify the corresponding **path** parameters to your own paths(the same applies to the other datasets.
+- (The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
 
 - Then, run the following script to extract features from '.fasta' files.
 ```
-python ./data/utils/AntiBERTy_embedding_generate.py
-python ./data/utils/ESM2_embedding_generate.py
-python ./data/utils/Prott5_embedding_generate.py
-python ./data/utils/PSSM_generate.py
+python ./data/utils/run_all_features.py --config_file S4169_config.json
 ```
 - **One hot**, **Physicochemical properties** and **BLOSUM62** will be automatically generated during training.
  
