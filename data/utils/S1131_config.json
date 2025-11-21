@@ -8,9 +8,9 @@
     },
 
     "output_dirs": {
-        "esm2": "./data/S1131_esm2",
+        "esm2": "./data/S1131_esm2_emb",
         "prott5": "./data/S1131_prott5",
-        "pssm": "./data/S1131_pssm"
+        "pssm": "./data/S1131_PSSM"
     },
 
     "script_paths": {
