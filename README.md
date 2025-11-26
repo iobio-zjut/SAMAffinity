@@ -59,10 +59,10 @@ Please follow the instructions in the corresponding GitHub repository to install
 
 ## **2.📦Feature Generation**
 
-- First, taking the S4169 dataset as example, open the **`./data/utils/S4169_config.json`** file and modify the corresponding **path parameters** to your own paths (the same applies to the other datasets. The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
+- First, taking the S1131 dataset as example, open the **`./data/utils/S1131_config.json`** file and modify the corresponding **path parameters** to your own paths (the same applies to the other datasets. The **`M1101_config.json`** configuration file and features are shared between the **M1101** and **S645** datasets).
 - Then, run the following script to extract features from `.csv` files.
 ```
-python ./data/utils/run_all_features.py --config_file ./data/utils/S4169_config.json
+python ./data/utils/run_all_features.py --config_file ./data/utils/S1131_config.json
 ```
 - **One hot**, **Physicochemical properties** and **BLOSUM62** will be automatically generated during training.
  
@@ -74,12 +74,12 @@ python ./data/utils/run_all_features.py --config_file ./data/utils/S4169_config.
 - Run the following script to train the **S4139** model, the same applies to other datasets.
 - (Note: Make sure to check any paths that may be involved in the file.)
 ```
-python ./main/S4169/train/train_S4169.py
+python ./main/S1131/train/train_S1131.py
 ```
 ## **4.🚀Predict**
 - Run the following script to predict the **S4139** model, the same applies to other datasets.
 ```
-python ./main/S4169/predict/predict_S4169.py
+python ./main/S1131/predict/predict_S1131.py
 ```
 - [The pretrained model is provided.](https://github.com/iobio-zjut/SAMAffinity/releases/tag/v1.0)
 
