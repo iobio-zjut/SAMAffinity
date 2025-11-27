@@ -71,13 +71,13 @@ python ./data/utils/run_all_features.py --config_file ./data/utils/S1131_config.
 
 ## **3.🔥Training**
 
-- Run the following script to train the **S4139** model, the same applies to other datasets.
+- Run the following script to train the **S1131** model, the same applies to other datasets.
 - (Note: Make sure to check any paths that may be involved in the file.)
 ```
 python ./main/S1131/train/train_S1131.py
 ```
 ## **4.🚀Predict**
-- Run the following script to predict the **S4139** model, the same applies to other datasets.
+- Run the following script to predict the **S1131** model, the same applies to other datasets.
 ```
 python ./main/S1131/predict/predict_S1131.py
 ```
