@@ -64,6 +64,10 @@ Please follow the instructions in the corresponding GitHub repository to install
 ```
 python ./data/utils/run_all_features.py --config_file ./data/utils/S1131_config.json
 ```
+- If you wanna to generate AntiBERTy embeddings, run the follows option.
+```
+python ./data/utils/run_all_features.py --config_file ./data/utils/S1131_config.json --antiberty
+```
 - **One hot**, **Physicochemical properties** and **BLOSUM62** will be automatically generated during training.
  
 - Please visit [NetSurfP-3.0 online server](https://services.healthtech.dtu.dk/services/NetSurfP-3.0/) for **RASA** generation.
