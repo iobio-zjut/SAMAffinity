@@ -120,7 +120,7 @@ def main():
 
     parser.add_argument('--config_file', type=str, required=True,
                         help="Path to the JSON configuration file (e.g., config.json)")
-
+    parser.add_argument("--antiberty", action="store_true", help="Enable AntiBERTy feature extraction")
     args = parser.parse_args()
 
     # 1. 加载配置
@@ -164,13 +164,17 @@ def main():
     print("STARTING FEATURE EXTRACTION (STEP 2)")
     print("=" * 60)
 
-    # 1. AntiBERTy
-    run_feature_script(
-        script_path=script_paths['antiberty'],
-        fasta_dir=fasta_dir,
-        output_dir=output_dirs['antiberty'],
-        suffix_list_str=suffix_list_str,
-    )
+    # 1. AntiBERTy (optional)
+    if args.antiberty:
+        print("\nRunning AntiBERTy feature extraction...")
+        run_feature_script(
+            script_path=script_paths['antiberty'],
+            fasta_dir=fasta_dir,
+            output_dir=output_dirs['antiberty'],
+            suffix_list_str=suffix_list_str,
+        )
+    else:
+        print("\nSkipping AntiBERTy feature extraction.")
 
     # 2. ESM2
     esm_config = config.get('esm2_specific', {})
